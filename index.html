@@ -10,13 +10,14 @@
 		</p>
 	</body>-->
 	<body>
-		<canvas id="player" style="background: #000;">
-			Hello!
-		</canvas>
+		<img src='' id='camera' />
 	</body>
-	<script src="mjpeg.js"></script>
+	<script src="cam.js"></script>
 	<script>
-		var player = new MJPEG.Player("player", "http://192.168.1.12:8080/video");
-		player.start();
+		// Active camera will refresh every 2 seconds
+		var TIMEOUT = 2000;
+		var refreshInterval = setInterval(function() {
+			document.getElementById("camera").setAttribute("src", "http://192.168.1.12:8080/video");
+		}, TIMEOUT);
 	</script>
 </html>
