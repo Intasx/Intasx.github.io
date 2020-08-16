@@ -12,7 +12,7 @@ queryCmd: false
 // Whether to allow control-C to interrupt a running program.  CAUTION:
 // if you set this to false, and your program enters an infinite loop,
 // then your only recourse will be to restart Mini Micro.
-controlC: true
+controlC: false
 
 // Whether to show the disk slots in the bezel below the screen.
 // NOTE: this is ignored in web builds (where disk slots are never shown).
